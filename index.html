@@ -11,12 +11,98 @@
     <h1 id="title">Your preferred HOT beverage</h1>
     <p id="description">Are you a coffee or tea person? Let us know what do you like!</p>
     <form id="survey-form">
-        <label id="name-label" >Enter Your Name: <input id="name" type="text" placeholder="Your name goes here" required />
+        <fieldset>
+        <label for="name" id="name-label" >Enter Your Name: <input type="text" id="name" placeholder="Your name goes here" required />
         </label>
-        <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="Your email goes here" required />
+        <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" placeholder="Your email goes here" required />
         </label>
-        <label id="number-label">How many hot beverages per day you drink? <input id="number" type="number" name="how-many" min="0" max="100" placeholder="Usual number of hot drinks per day" />
+    </fieldset>
+    <fieldset>
+        <label for="number" id="number-label">How many hot beverages per day you drink? <input type="number" id="number" name="how-many" min="0" max="100" placeholder="Usual number of hot drinks per day" />
     </label>
+    <label for="dropdown">What do you prefer: coffee or tea?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">coffee</option>
+          <option value="2">tea</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <label for="other" >If other tell us what: <input id="other" type="text" />
+      </label>
+    </fieldset>
+      <fieldset>
+        <legend>How do you normally prepare your coffee? </legend>
+      <div>
+        <input type="radio" name="prep-type" id="french-press" value="french-press">
+        <label for="french-press">French press</label>
+       </div>
+
+       <div>
+        <input type="radio" name="prep-type" id="drip-maker" value="drip-maker">
+        <label for="drip-maker">Drip maker</label>
+       </div>
+
+       <div>
+        <input type="radio" name="prep-type" id="pour-over" value="pour-over">
+        <label for="pour-over">Pour over brewer</label>
+       </div>
+       
+       <div>
+        <input type="radio" name="prep-type" id="capsule" value="capsule">
+        <label for="capsule">Single server capsule maker</label>
+       </div>
+
+       <div>
+        <input type="radio" name="prep-type" id="aero-press" value="aero-press">
+        <label for="aero-press">AeroPress maker</label>
+       </div>
+       <div>
+        <input type="radio" name="prep-type" id="espresso" value="espresso">
+        <label for="espresso">Espresso maker</label>
+       </div>
+
+       <div>
+        <input type="radio" name="prep-type" id="cold-brew" value="cold-brew">
+        <label for="cold-brew">Cold Brew maker</label>
+       </div>
+       <label for="other-type" >If other option share with us how? <input id="other-type" type="text" />
+       </label>
+        </fieldset>
+        <fieldset>
+            <legend>What types of tea do you prefer?</legend>
+            <div>
+                <input type="checkbox" name="tea1" value="black" checked>
+                <label for="tea1">Black tea</label>
+              </div>
+          
+              <div>
+                <input type="checkbox" name="tea2" value="herbal">
+                <label for="tea2">Herbal tea</label>
+              </div>
+
+              <div>
+                <input type="checkbox"name="tea3" value="fruit">
+                <label for="tea3">Fruit tea</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="tea4" value="loose">
+                <label for="tea4">Loose leaf tea</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="tea5" value="bagged">
+                <label for="tea5">Bagged tea</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="tea6" value="with-milk" >
+                <label for="tea5">Tea with milk</label>
+              </div>
+              <label for="other-tea" >If other tea option tell us which one? <input id="other-tea" type="text" />
+              </label>
+        </fieldset>
     </form>
 </body>
 </html>
