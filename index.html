@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Survey Form</h1>
-    <p>Let us know what you think</p>
+    <h1 id="title">Your preferred HOT beverage</h1>
+    <p id="description">Are you a coffee or tea person? Let us know what do you like!</p>
+    <form id="survey-form">
+        <label id="name-label" >Enter Your Name: <input id="name" type="text" placeholder="Your name goes here" required />
+        </label>
+        <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="Your email goes here" required />
+        </label>
+        <label id="number-label">How many hot beverages per day you drink? <input id="number" type="number" name="how-many" min="0" max="100" placeholder="Usual number of hot drinks per day" />
+    </label>
+    </form>
 </body>
 </html>
