@@ -70,6 +70,10 @@ label {
     margin-bottom: -2em;
   }
 
+  .describe {
+    margin-top: -2em;
+  }
+
   .question {
     color: #ffffb3;
   }
